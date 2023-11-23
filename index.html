@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="web creator">
+        <meta name="description" content="This web page is a Registration Form Page">
+        <title>Registration Form - Online Academy</title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="th.jpeg" rel="icon" type="image/x-icon">
+    </head>
+    <body>
+        <div class="head">
+        <h1 id="title">Registration Form</h1>
+        <p id="description">Thank you for enrolling in our 30days-free-course . </p>
+        </div>
+        <div class="form">
+        <form action="action.html" id="survey-form">
+        <fieldset>
+            <label for="name" id="name-label">Name <input id="name" placeholder="Enter your Name" type="text" required autocomplete autofocus >
+            </label>
+            <label id="email-label" for="email">Email <input id="email" type="email" required autocomplete placeholder="Enter your email">
+            </label>
+            <label for="number" id="number-label">Age: &lpar;optional&rpar; <input type="number" id="number"min="10" max="120" placeholder="Age" name="phone number"></label>
+        </fieldset>
+        <fieldset>
+            <label>Which option describes best your current role?
+            <select id="dropdown" >
+                <option value="" disabled selected hidden>Select your current role</option>
+                <option value="student">Student</option>
+                <option value="student">Teacher</option>
+                <option value="job">Full&sol;Part-time job</option>
+                <option value="notsay">Prefer not to say</option>
+            </select>
+        </label>
+        </fieldset>
+        <fieldset>
+            <legend>What goal will you set to finish this course?</legend>
+            <label for="1"><input id="1" type="radio" name="goal" value="1" checked >1 Day per week</label>
+            <label for="3"><input id="3" type="radio" name="goal" value="3" >3 Days per week</label>
+            <label for="5"><input id="5" type="radio" name="goal" value="5" >5 Days per week</label>
+            <label for="other"><input id="other" type="radio" name="goal" value="5">Other</label>
+        </fieldset>
+        <fieldset>
+            <legend class="dropdown">Why are you interested in this course?</legend>
+            <select>
+                <option value="" disabled selected hidden>Select an option from this list</option>
+                <option value="2">I need this course for my curriculum</option>
+                <option value="4">I am taking this course for fun</option>
+                <option value="6">I need this course to prepare College entrance</option>
+                <option value="7">I need this course to improve my skills at work</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>What math branch&lpar;es&rpar; are you mostly interested in?</legend>
+            <label for="calculus"><input id="calculus" type="checkbox" name="calculus" value="calculus"> Calculus</label>
+            <label for="algebra"><input id="algebra" type="checkbox" name="algebra" value="algebra"> Algebra</label>
+            <label for="geometry"><input id="geometry" type="checkbox" name="geometry" value="geometry"> Geometry</label>
+            <label for="trigonometry"><input id="trigonometry" type="checkbox" name="trigonometry" value="trigonometry"> Trigonometry</label>
+            <label for="statistics"><input id="statistics" type="checkbox" name="statistics" value="statistics"> Statistics and Probability</label>
+            <label for="else"><input id="else" type="checkbox" name="else" value="other"> Other</label>
+        </fieldset>
+        <fieldset>
+            <label for="suggestions">Any suggestions?
+            <textarea rows="3" cols="30" id="suggestions" name="suggestions" placeholder="I suggest that ..."></textarea> 
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit">
+        </div>
+        </form>
+        
+        
+    </body>
+</html>
